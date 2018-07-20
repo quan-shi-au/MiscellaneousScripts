@@ -1,0 +1,10 @@
+# export
+
+"C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\SqlPackage.exe" /a:Export /ssn:Dev-Sam /sdn:Test /tf:C:\Temp\DataExtraction\Test.bacpac /su:sa /sp:w0nt0k
+
+"C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\SqlPackage.exe" /a:Export /ssn:192.168.101.162 /sdn:idSafeV4 /tf:C:\Temp\DataExtraction\idSafeV4.bacpac /su:sa /sp:d3Arkl3!
+
+# import
+
+"C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\SqlPackage.exe" /a:Import /tsn:Dev-Sam /tdn:TestCopied /sf:C:\Temp\DataExtraction\Test.bacpac /tu:sa /tp:w0nt0k
+
